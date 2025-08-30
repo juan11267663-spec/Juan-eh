@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+}
+
+#quote-section {
+  margin-top: 50px;
+}
+
+#start-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+#camera-section {
+  margin-top: 20px;
+}
+
+#meter {
+  width: 320px;
+  height: 30px;
+  background: #ddd;
+  border-radius: 15px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+#fill {
+  width: 0%;
+  height: 100%;
+  background: #4CAF50;
+  transition: width 0.3s;
+}

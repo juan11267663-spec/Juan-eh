@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smile Meter</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <!-- face-api.js library -->
+  <script defer src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+</head>
+<body>
+  <div id="quote-section">
+    <h1>Reasons to Smile 😊</h1>
+    <p id="quote"></p>
+    <button id="start-btn">Test Your Smile</button>
+  </div>
+
+  <div id="camera-section" style="display: none;">
+    <video id="video" width="320" height="240" autoplay muted></video>
+    <canvas id="overlay" width="320" height="240"></canvas>
+    <div id="meter">
+      <div id="fill"></div>
+    </div>
+    <p id="meter-text">Smile Meter: 0%</p>
+  </div>
+</body>
+</html>
