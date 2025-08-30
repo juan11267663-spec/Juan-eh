@@ -1,9 +1,9 @@
 const quotes = [
   "Smile! It makes you look younger 😄",
   "A smile is the prettiest thing you can wear 💙",
-  "Smiling is contagious — spread it! 😊",
+  "Smiling is contagious — spread it! ",
   "Your smile can light up the darkest day 🌞",
-  "Keep smiling, because life is beautiful! 🌸"
+  "Keep smiling, because juan is always with you! 🌸"
 ];
 
 const quoteEl = document.getElementById("quote");
@@ -20,8 +20,8 @@ startBtn.addEventListener("click", async () => {
   cameraSection.style.display = "block";
 
   // Load face-api models
-  await faceapi.nets.tinyFaceDetector.loadFromUri("models");
-   await faceapi.nets.faceExpressionNet.loadFromUri("models");
+  await faceapi.nets.tinyFaceDetector.loadFromUri(".");
+  await faceapi.nets.faceExpressionNet.loadFromUri(".");
 
   // Start video
   navigator.mediaDevices.getUserMedia({ video: {} })
