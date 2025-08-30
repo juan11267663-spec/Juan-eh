@@ -20,8 +20,8 @@ startBtn.addEventListener("click", async () => {
   cameraSection.style.display = "block";
 
   // Load face-api models
-  await faceapi.nets.tinyFaceDetector.loadFromUri("https://cdn.jsdelivr.net/npm/face-api.js/models");
-  await faceapi.nets.faceExpressionNet.loadFromUri("https://cdn.jsdelivr.net/npm/face-api.js/models");
+  await faceapi.nets.tinyFaceDetector.loadFromUri("models");
+   await faceapi.nets.faceExpressionNet.loadFromUri("models");
 
   // Start video
   navigator.mediaDevices.getUserMedia({ video: {} })
